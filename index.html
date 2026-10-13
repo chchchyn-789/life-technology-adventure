@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f7f3" />
+    <title>生活科技探險隊</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.90.0/phaser.min.js"></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="page-header">
+        <div class="brand-mark" aria-hidden="true">✦</div>
+        <div>
+          <p class="eyebrow">小小生活科技家</p>
+          <h1>生活科技探險隊</h1>
+        </div>
+        <div class="header-note"><span class="sparkle">✦</span> 想一想，再出發</div>
+      </header>
+
+      <section class="game-shell" aria-label="生活科技闖關遊戲">
+        <div id="game" aria-label="使用方向鍵或 WASD 操作角色，走近答案蒐集"></div>
+      </section>
+
+      <footer class="page-footer">
+        <span><b>操作</b> 方向鍵／WASD，或使用畫面下方方向鈕</span>
+        <span><b>計分</b> 答對 +10 分　答錯 −5 分</span>
+        <span class="footer-medal">超過 40 分可獲得榮譽勳章 <span aria-hidden="true">✦</span></span>
+      </footer>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

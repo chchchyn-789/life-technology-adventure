@@ -3,32 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f3f7f3" />
-    <title>生活科技探險隊</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.90.0/phaser.min.js"></script>
+    <meta name="theme-color" content="#182b4b" />
+    <meta name="description" content="從生活科技闖關到遊戲式學習，探索遊戲如何帶來新的發現。" />
+    <title>遊戲學習基地｜生活科技與遊戲式學習</title>
+    <link rel="stylesheet" href="portal.css" />
   </head>
   <body>
-    <main class="page">
-      <header class="page-header">
-        <div class="brand-mark" aria-hidden="true">✦</div>
-        <div>
-          <p class="eyebrow">小小生活科技家</p>
-          <h1>生活科技探險隊</h1>
-        </div>
-        <div class="header-note"><span class="sparkle">✦</span> 想一想，再出發</div>
-      </header>
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-inner">
+          <a class="brand" href="./" aria-label="遊戲學習基地首頁">
+            <span class="brand-mark" aria-hidden="true">✦</span>
+            <span>遊戲學習基地</span>
+          </a>
 
-      <section class="game-shell" aria-label="生活科技闖關遊戲">
-        <div id="game" aria-label="使用方向鍵或 WASD 操作角色，走近答案蒐集"></div>
+          <div class="hero-copy">
+            <p class="eyebrow"><span aria-hidden="true">✦</span> 玩一玩，學會新點子</p>
+            <h1 id="page-title">從遊玩開始，<br />發現生活中的科技</h1>
+            <p class="intro">用遊戲探索生活科技，也認識遊戲式學習如何把課程變成有趣的挑戰。</p>
+            <a class="scroll-link" href="#explore">往下探索 <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="art-card">
+              <span class="art-tag">今日任務</span>
+              <strong>用遊戲探索新知</strong>
+              <span class="progress"><i></i></span>
+              <small>開始一段學習冒險</small>
+            </div>
+            <span class="float-tile tile-star">✦</span>
+            <span class="float-tile tile-heart">♥</span>
+            <span class="float-tile tile-circle">●</span>
+          </div>
+
+          <div class="hero-stats" aria-label="網站內容">
+            <span><b>2</b> 個互動體驗</span>
+            <span><b>10</b> 種遊戲機制</span>
+            <span><b>∞</b> 種學習點子</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="explore" id="explore" aria-labelledby="explore-title">
+        <div class="section-heading">
+          <p class="section-label">挑一個開始</p>
+          <h2 id="explore-title">探索遊戲與學習</h2>
+          <p>選擇想體驗的內容，從挑戰、觀察與思考中找到新發現。</p>
+        </div>
+
+        <div class="experience-list">
+          <a class="experience-card learning-card" href="game-learning.html">
+            <span class="card-kicker">這次設計</span>
+            <span class="card-icon" aria-hidden="true">✧</span>
+            <span class="card-title">遊戲式學習遊樂場</span>
+            <span class="card-description">認識遊戲式學習，體驗十種 Phaser 遊戲機制，並探索生活科技記憶配對。</span>
+            <span class="card-action">前往遊樂場 <span aria-hidden="true">↗</span></span>
+          </a>
+
+          <a class="experience-card adventure-card" href="life-tech-adventure.html">
+            <span class="card-kicker">先前設計</span>
+            <span class="card-icon" aria-hidden="true">⚙</span>
+            <span class="card-title">生活科技探險隊</span>
+            <span class="card-description">操作角色完成五個生活科技關卡，蒐集答案、累積分數並挑戰榮譽勳章。</span>
+            <span class="card-action">開始闖關 <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
       </section>
 
       <footer class="page-footer">
-        <span><b>操作</b> 方向鍵／WASD，或使用畫面下方方向鈕</span>
-        <span><b>計分</b> 答對 +10 分　答錯 −5 分</span>
-        <span class="footer-medal">超過 40 分可獲得榮譽勳章 <span aria-hidden="true">✦</span></span>
+        <a class="footer-brand" href="./">遊戲學習基地</a>
+        <span>把好奇心變成學習動力</span>
+        <nav class="footer-links" aria-label="遊戲連結">
+          <a href="game-learning.html">這次設計：遊戲式學習遊樂場</a>
+          <a href="life-tech-adventure.html">先前設計：生活科技探險隊</a>
+        </nav>
       </footer>
     </main>
-    <script src="game.js"></script>
   </body>
 </html>

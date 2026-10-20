@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="認識遊戲式學習，透過十種遊戲機制與 Phaser 範例探索課堂設計。">
+  <title>遊戲式學習遊樂場</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="game-learning.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar site-nav" aria-label="主要導覽">
+    <div class="container-xl nav-inner">
+      <a class="navbar-brand brand-mark" href="#top"><span class="brand-icon" aria-hidden="true">✦</span>遊戲式學習遊樂場</a>
+      <div class="nav-links">
+        <a class="nav-link" href="#about">認識遊戲式學習</a>
+        <a class="nav-link" href="#mechanisms">十種遊戲機制</a>
+        <a class="nav-link" href="#teaching">教學設計提示</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section" id="top">
+    <div class="container-xl hero-content">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>把好奇心變成學習動力</p>
+        <h1>玩出想法，<br>學會解決問題</h1>
+        <p class="hero-description">認識遊戲式學習，看看十種遊戲機制如何把知識變成任務、選擇與發現。每個範例都能直接操作。</p>
+        <div class="hero-actions">
+          <a class="btn btn-sun" href="#mechanisms">開始探索 <span aria-hidden="true">↓</span></a>
+          <a class="hero-text-link" href="#about">先認識遊戲式學習</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="hero-token token-star">✦</div>
+        <div class="hero-token token-coin">●</div>
+        <div class="hero-token token-heart">♥</div>
+        <div class="hero-token token-cube">▧</div>
+        <div class="hero-card">
+          <span class="hero-card-label">今日任務</span>
+          <strong>用遊戲探索新知</strong>
+          <div class="hero-progress"><span></span></div>
+          <small>完成一個挑戰，累積一次理解</small>
+        </div>
+        <div class="hero-bubble">試試看</div>
+      </div>
+      <div class="hero-stats" aria-label="頁面內容">
+        <div><strong>10</strong><span>種遊戲機制</span></div>
+        <div><strong>10</strong><span>個 Phaser 範例</span></div>
+        <div><strong>∞</strong><span>種課堂點子</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro-section section-space" id="about">
+      <div class="container-xl">
+        <div class="section-heading intro-heading">
+          <p class="section-kicker">先從概念開始</p>
+          <h2>什麼是遊戲式學習</h2>
+          <p class="section-lead">遊戲式學習是把明確的學習目標放進可玩的情境中。學生透過選擇、嘗試、回饋與修正理解概念，老師則觀察遊玩歷程，帶領學生整理經驗並連結真實生活。</p>
+        </div>
+        <div class="row g-4 intro-cards">
+          <div class="col-md-4">
+            <article class="intro-card">
+              <span class="intro-icon icon-goal" aria-hidden="true">◎</span>
+              <h3>有方向的目標</h3>
+              <p>挑戰和課程目標彼此呼應，讓學生知道自己正在練習什麼。</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="intro-card">
+              <span class="intro-icon icon-choice" aria-hidden="true">↗</span>
+              <h3>能做選擇與嘗試</h3>
+              <p>學生採取行動、看到結果，再根據線索調整下一步。</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="intro-card">
+              <span class="intro-icon icon-feedback" aria-hidden="true">✳</span>
+              <h3>看得見的回饋</h3>
+              <p>分數、提示或關卡變化都能讓理解過程更具體。</p>
+            </article>
+          </div>
+        </div>
+        <p class="learning-note"><span aria-hidden="true">✦</span> 重點不在獎品多寡，而在遊戲機制是否幫助學生思考、練習與反思。</p>
+      </div>
+    </section>
+
+    <section class="mechanisms-section section-space" id="mechanisms">
+      <div class="container-xl">
+        <div class="section-heading mechanisms-heading">
+          <p class="section-kicker">玩法就是學習線索</p>
+          <h2>十種適合課堂的遊戲機制</h2>
+          <p class="section-lead">從收集、配對到推理和防守，點擊範例畫面即可遊玩。思考每種玩法可以如何連結你的課程主題。</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12">
+            <article class="mechanism-card">
+              <div class="mechanism-topline"><span class="mechanism-number">01</span><span class="mechanism-tag tag-mint">目標與挑戰</span></div>
+              <h3>堆疊挑戰與逐步目標</h3>
+              <p class="mechanism-copy">掌握方塊移動時機，逐層堆高並追求穩定。每次成功或失誤都會改變接下來的挑戰。</p>
+              <div class="learning-prompt"><strong>課堂連結</strong><span>觀察對齊、平衡和材料排列如何影響成果。</span></div>
+              <div class="example-heading"><span>Phaser 範例</span><a href="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fstacker%2Fstacker.js" target="_blank" rel="noopener noreferrer">另開範例 ↗</a></div>
+              <div class="lab-game-viewport"><iframe class="game-frame" src="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fstacker%2Fstacker.js" title="堆疊方塊與目標挑戰遊戲範例" loading="lazy" allow="fullscreen"></iframe></div>
+              <p class="control-hint">操作提示：點擊畫面或按空白鍵放置方塊</p>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="mechanism-card">
+              <div class="mechanism-topline"><span class="mechanism-number">02</span><span class="mechanism-tag tag-coral">操作與回饋</span></div>
+              <h3>精準操作與即時回饋</h3>
+              <p class="mechanism-copy">控制擋板反彈球體，碰撞結果立即改變局勢。學生可以練習觀察、預測與修正操作。</p>
+              <div class="learning-prompt"><strong>課堂連結</strong><span>預測力的方向，觀察條件改變後的結果。</span></div>
+              <div class="example-heading"><span>Phaser 範例</span><a href="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fbreakout%2Fbreakout.js" target="_blank" rel="noopener noreferrer">另開範例 ↗</a></div>
+              <div class="lab-game-viewport"><iframe class="game-frame" src="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fbreakout%2Fbreakout.js" title="打磚塊與物理反彈遊戲範例" loading="lazy" allow="fullscreen"></iframe></div>
+              <p class="control-hint">操作提示：移動滑鼠控制擋板，點擊發球</p>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="mechanism-card" id="memory-mechanism">
+              <div class="mechanism-topline"><span class="mechanism-number">03</span><span class="mechanism-tag tag-lilac">記憶與配對</span></div>
+              <h3>生活科技記憶配對</h3>
+              <p class="mechanism-copy">每關有六張牌，找出三組生活情境與正確行動。全程競速計時，答錯加五秒，三分鐘內完成可獲得榮譽勳章。</p>
+              <div class="learning-prompt"><strong>課堂連結</strong><span>練習辨識生活問題，並選擇合適的處理方式。</span></div>
+              <div class="example-heading"><span>生活科技 Phaser 範例</span><a href="life-tech-memory.html">另開遊戲 ↗</a></div>
+              <iframe class="game-frame memory-game-frame" src="life-tech-memory.html?embed=1" title="生活科技情境與正確行動記憶配對遊戲" loading="lazy" allow="fullscreen"></iframe>
+              <p class="control-hint">操作提示：每關翻開六張卡片完成三組配對，挑戰更快時間</p>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="mechanism-card">
+              <div class="mechanism-topline"><span class="mechanism-number">04</span><span class="mechanism-tag tag-yellow">觀察與反應</span></div>
+              <h3>觀察線索與快速反應</h3>
+              <p class="mechanism-copy">留意不同門口出現的人物，快速辨認目標並做出選擇。畫面線索會引導行動。</p>
+              <div class="learning-prompt"><strong>課堂連結</strong><span>從情境線索判斷需求，選擇合適的處理方式。</span></div>
+              <div class="example-heading"><span>Phaser 範例</span><a href="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fbank%20panic%2Fmain.js&amp;module=true" target="_blank" rel="noopener noreferrer">另開範例 ↗</a></div>
+              <div class="lab-game-viewport lab-game-viewport--fluid"><iframe class="game-frame" src="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fbank%20panic%2Fmain.js&amp;module=true" title="觀察門口並快速反應的遊戲範例" loading="lazy" allow="fullscreen"></iframe></div>
+              <p class="control-hint">操作提示：觀察畫面並點擊適當的門口</p>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="mechanism-card">
+              <div class="mechanism-topline"><span class="mechanism-number">05</span><span class="mechanism-tag tag-coral">限時與決策</span></div>
+              <h3>時間限制與快速決策</h3>
+              <p class="mechanism-copy">在倒數時間中完成點擊任務。時間限制能讓學生練習排序優先順序與掌握節奏。</p>
+              <div class="learning-prompt"><strong>課堂連結</strong><span>限時整理資訊，先完成最重要的步驟。</span></div>
+              <div class="example-heading"><span>Phaser 範例</span><a href="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fcoin%20clicker%2Fmain.js&amp;module=true" target="_blank" rel="noopener noreferrer">另開範例 ↗</a></div>
+              <div class="lab-game-viewport"><iframe class="game-frame" src="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fcoin%20clicker%2Fmain.js&amp;module=true" title="限時點擊遊戲範例" loading="lazy" allow="fullscreen"></iframe></div>
+              <p class="control-hint">操作提示：依照畫面指示快速點擊</p>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="mechanism-card">
+              <div class="mechanism-topline"><span class="mechanism-number">06</span><span class="mechanism-tag tag-mint">策略與規劃</span></div>
+              <h3>策略選擇與步數規劃</h3>
+              <p class="mechanism-copy">選擇顏色逐步擴展同色區域，在有限步數內完成目標。每一步都會影響接下來的選擇。</p>
+              <div class="learning-prompt"><strong>課堂連結</strong><span>預想行動後果，嘗試用更少步驟達成目標。</span></div>
+              <div class="example-heading"><span>Phaser 範例</span><a href="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fflood%20fill%2Fflood-fill.js" target="_blank" rel="noopener noreferrer">另開範例 ↗</a></div>
+              <div class="lab-game-viewport"><iframe class="game-frame" src="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fflood%20fill%2Fflood-fill.js" title="色彩擴展與步數規劃遊戲範例" loading="lazy" allow="fullscreen"></iframe></div>
+              <p class="control-hint">操作提示：選擇顏色，觀察區域如何擴展</p>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="mechanism-card">
+              <div class="mechanism-topline"><span class="mechanism-number">07</span><span class="mechanism-tag tag-yellow">邏輯與推理</span></div>
+              <h3>線索推理與風險判斷</h3>
+              <p class="mechanism-copy">根據數字判斷周圍地雷數量，再決定要翻開或標記哪些格子。線索需要組合才能得出結論。</p>
+              <div class="learning-prompt"><strong>課堂連結</strong><span>利用觀察資料形成推論，並說明判斷理由。</span></div>
+              <div class="example-heading"><span>Phaser 範例</span><a href="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fminesweeper%2Fminesweeper.js" target="_blank" rel="noopener noreferrer">另開範例 ↗</a></div>
+              <div class="lab-game-viewport"><iframe class="game-frame" src="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fminesweeper%2Fminesweeper.js" title="數字線索推理遊戲範例" loading="lazy" allow="fullscreen"></iframe></div>
+              <p class="control-hint">操作提示：點擊格子查看線索，右鍵標記地雷</p>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="mechanism-card">
+              <div class="mechanism-topline"><span class="mechanism-number">08</span><span class="mechanism-tag tag-lilac">空間與排序</span></div>
+              <h3>空間推理與順序安排</h3>
+              <p class="mechanism-copy">移動拼圖方塊重組圖像。玩家需要觀察空格位置，規劃方塊移動順序。</p>
+              <div class="learning-prompt"><strong>課堂連結</strong><span>安排組裝流程、設計步驟或整理空間關係。</span></div>
+              <div class="example-heading"><span>Phaser 範例</span><a href="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fsliding%20puzzle%2Fmain.js&amp;module=true" target="_blank" rel="noopener noreferrer">另開範例 ↗</a></div>
+              <div class="lab-game-viewport"><iframe class="game-frame" src="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fsliding%20puzzle%2Fmain.js&amp;module=true" title="滑動拼圖與順序規劃遊戲範例" loading="lazy" allow="fullscreen"></iframe></div>
+              <p class="control-hint">操作提示：點擊空格旁的方塊移動拼圖</p>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="mechanism-card">
+              <div class="mechanism-topline"><span class="mechanism-number">09</span><span class="mechanism-tag tag-mint">躲避與取捨</span></div>
+              <h3>躲避障礙與資源取捨</h3>
+              <p class="mechanism-copy">移動角色避開細菌並蒐集物品。學生要在安全和取得資源之間做選擇。</p>
+              <div class="learning-prompt"><strong>課堂連結</strong><span>思考風險、資源與安全之間的關係。</span></div>
+              <div class="example-heading"><span>Phaser 範例</span><a href="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Favoid%20the%20germs%2Fmain.js&amp;module=true" target="_blank" rel="noopener noreferrer">另開範例 ↗</a></div>
+              <div class="lab-game-viewport"><iframe class="game-frame" src="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Favoid%20the%20germs%2Fmain.js&amp;module=true" title="躲避障礙並蒐集物品的遊戲範例" loading="lazy" allow="fullscreen"></iframe></div>
+              <p class="control-hint">操作提示：使用方向鍵移動角色</p>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="mechanism-card">
+              <div class="mechanism-topline"><span class="mechanism-number">10</span><span class="mechanism-tag tag-coral">防守與優先排序</span></div>
+              <h3>防守挑戰與優先排序</h3>
+              <p class="mechanism-copy">面對不斷靠近的敵人，判斷眼前威脅並安排防守行動，練習在變化中重新排序。</p>
+              <div class="learning-prompt"><strong>課堂連結</strong><span>依照影響程度排序問題，分配有限的時間與資源。</span></div>
+              <div class="example-heading"><span>Phaser 範例</span><a href="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fsnowmen%20attack%2Fmain.js&amp;module=true" target="_blank" rel="noopener noreferrer">另開範例 ↗</a></div>
+              <div class="lab-game-viewport lab-game-viewport--fluid"><iframe class="game-frame" src="https://labs.phaser.io/phaser4-view.html?src=src%2Fgames%2Fsnowmen%20attack%2Fmain.js&amp;module=true" title="防守與優先排序遊戲範例" loading="lazy" allow="fullscreen"></iframe></div>
+              <p class="control-hint">操作提示：移動角色並瞄準接近的目標</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="teaching-section section-space" id="teaching">
+      <div class="container-xl teaching-wrap">
+        <div class="teaching-copy">
+          <p class="section-kicker">帶回你的課堂</p>
+          <h2>讓遊戲經驗<br>連上學習目標</h2>
+          <p>挑選機制時，從學生需要練習的思考開始，再決定要用什麼任務和回饋。遊玩後留一點時間分享策略，學習才會從畫面延伸到生活。</p>
+        </div>
+        <div class="teaching-steps">
+          <div class="teaching-step"><span>1</span><div><strong>設定學習目標</strong><p>學生結束遊戲時要知道什麼或做到什麼</p></div></div>
+          <div class="teaching-step"><span>2</span><div><strong>挑選合適機制</strong><p>讓操作與思考直接練習目標能力</p></div></div>
+          <div class="teaching-step"><span>3</span><div><strong>安排回饋線索</strong><p>讓學生知道結果如何連到自己的選擇</p></div></div>
+          <div class="teaching-step"><span>4</span><div><strong>一起回顧策略</strong><p>分享發現，連結到課程和日常經驗</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-xl footer-inner">
+      <span>遊戲式學習遊樂場</span>
+      <span>互動範例包含 Phaser Labs 與生活科技自製遊戲</span>
+      <a href="#top">回到頁面上方 ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
